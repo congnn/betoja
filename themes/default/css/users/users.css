@@ -1,0 +1,16 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 23, 2015, 5:03:53 PM
+    Author     : Tùng Arsenal
+*/
+.add_button{
+    background-image: none;
+    background-color: #0A9D59;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled]{
+    background-color: #0A9D59;
+}

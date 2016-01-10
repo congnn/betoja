@@ -1,0 +1,89 @@
+
+/*
+    Created on : Jun 23, 2015, 9:53:18 PM
+    Author     : phamtrong204
+*/
+html{
+    background: #fff;
+    overflow: hidden;
+}
+body{
+    width: auto;
+    line-height: 100%;
+    background-color: #252d3e;
+    height: 429px !important;
+}
+
+#user_note{
+    width: 300px;
+    height: 429px !important;
+}
+
+#user_note form{
+    margin-bottom: 0px;
+    height: 100%;
+}
+#user_note form .pre_note{
+    height: 395px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#user_note form .pre_note p{
+    text-align: justify;
+    padding-left: 2px;
+}
+
+#user_note form .pre_note p .time{
+    color: #019750;
+    font-size: 8pt;
+    vertical-align: top;
+}
+
+#user_note form .pre_note p .note{
+    padding-left: 10px;
+    display: inline-block;
+    color: #FFF;
+    font-size: 8pt;
+    word-wrap: break-word;
+    width: 200px;
+}
+#user_note form textarea{
+    width: 190px;
+    height: 26px !important;
+    line-height: 20px;
+    float: left;
+    resize: none;
+    border: 1px solid #096;
+    background: #fff;
+    margin: 0;
+    min-height: 26px !important;
+    border-radius: 4px;
+}
+#user_note form .footer{
+    text-align: right;
+    margin-bottom: 0px;
+}
+#user_note form .footer input[type='submit']{
+    background-color: #096;
+    border: none;
+    color: #fff;
+    padding: 13px 10px;
+    width: 50px;
+}
+
+#user_note .note_footer{
+    position: absolute;
+    padding: 3px;
+}
+
+#user_note .note_footer input[type='submit']{
+    background-color: #02fb85;
+    border: medium none;
+    margin: 0px 0px 0px 3px;
+    border-radius: 2px;
+}
+
+.visible-desktop{
+    display: none !important;
+}

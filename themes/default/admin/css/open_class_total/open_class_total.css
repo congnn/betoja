@@ -1,0 +1,20 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 21, 2015, 3:34:32 PM
+    Author     : Tùng Arsenal
+*/
+#table_rp{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+table#table_rp td{
+    height: 21px;
+}
+.title_hour{
+    color: #fff;
+    text-align: center;
+}

@@ -1,0 +1,185 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08-04-2015, 16:24:27
+    Author     : vanphu92
+*/
+.main{
+    overflow-x: scroll;
+}
+.taskbar {
+    vertical-align: top;
+    border-top: 5px #810c15 solid;
+}
+.row_data_title .date, .row_data_title .weekday {
+    text-align: center;
+    font-weight: bold;
+}
+.row_data_title .taskbar {
+    border: none;
+}
+.weekday {
+    display: inline-block;
+    width: 71px;
+}
+.e_data_wrap {
+    display: inline-block;
+    width: 71px;
+}
+.register_type_2{
+    background-color: blue;
+    color: white;
+}
+.register_type_3{
+    background-color: red;
+    color: white;
+}
+.register_type_4{
+    background-color: darkgray;
+    color: black;
+}
+div.item_class{
+    margin: 1px 0;
+}
+div.e_wrap_scroll{
+    /*height: 50px;*/
+}
+.item_class .input_arrange {
+    border: none !important;
+    background: none !important;
+    min-height: 27px !important;
+    line-height: 19px !important;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none;
+    padding-left: 1px;
+    width: 100%;
+    text-align: right;
+    padding-right: 6px;
+}
+.info_class {
+    margin-top: 1px;
+    height: 30px;
+    border: 1px solid #DDA9A9;
+    margin-bottom: 3px;
+}
+.default{
+    background: #f0f0f0;
+}
+.backup{
+    background: red;
+}
+.ui-autocomplete-category {
+    font-weight: bold;
+    padding: .2em .4em;
+    margin: .8em 0 .2em;
+    line-height: 1.5;
+}
+a.ui-corner-all{
+    margin-left: 20px;
+    padding :0;
+}
+li.ui-menu-item a.ui-corner-all:hover{
+    margin-left: 20px;
+}
+input[type_teacher="e_available"], .e_available{
+    color: #4d90fe;
+}
+input[type_teacher="e_fixed"], .e_fixed, input.register_type_4{
+    font-weight: bold;
+    color: #333;
+}
+input.register_type_4{
+    font-weight: bold;
+}
+div.info_class input.register_type_2{
+    font-weight: bold;
+    /*background-color: #63b547 !important;*/
+    color: #4d90fe;
+}
+input.register_type_3{
+    font-weight: bold;
+}
+input[type_teacher="e_backup"], .e_backup, input.register_type_3{
+    color: red;
+}
+.ui-menu .ui-menu-item a.ui-state-focus{
+    font-weight: normal;
+    margin: 0 0 0 20px !important;
+}
+.ui-widget-content .ui-state-focus{
+    /*background: #dadada url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;*/
+    cursor: pointer;
+    border: none;
+}
+.icon_del {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 15px;
+    color: #333;
+    line-height: 10px;
+    border: 1px solid #ccc;
+    margin-left: 63px;
+    margin-top: -3px;
+}
+div.item_class div.SC_basic, div.item_class div.SC_inter{
+    background-color: #00FF00 !important;
+}
+div.item_class div.SC_sbasic{
+    background-color: #e597e8 !important;
+}
+#i_row_data_title {
+    top: 52px;
+    left: 100px;
+    position: fixed;
+    display: none;
+    background: #fff;
+    width: 88%;
+    z-index: 999;
+    white-space: nowrap;
+}
+#i_row_data_title .taskbar{
+    border-bottom: 5px #810c15 solid;
+}
+.week_day_title{
+    position: absolute;
+    margin-left: -60px;
+    color: white;
+    font-weight: bold;
+    background: #810c15;
+    padding: 0 2px;
+}
+.ui-autocomplete {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+div.add_backup{
+    margin-left: 25px;
+    cursor: pointer;
+}
+input.class_backup{
+    color: white;
+}
+div.level_class{
+    position: absolute;
+    border-radius: 10px;
+    color: white;
+    padding-top: 0px;
+    padding-left: 4px;
+    font-size: 9px;
+    width: 13px;
+    height: 18px;
+    margin-top: -5px;
+    margin-left: -2px;
+}
+div.basic, div.PHI, div.AM, div.other{
+    background: none repeat scroll 0% 0% green;
+}
+div.inter{
+    background: none repeat scroll 0% 0% red;
+}

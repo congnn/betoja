@@ -1,0 +1,56 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 23, 2015, 2:17:04 PM
+    Author     : Tùng Arsenal
+*/
+.contact_main{
+    margin-top: 15px;
+    height: 1235px;
+    background-color: #FFF;
+    border: 1px solid #ededed;
+    position: relative;
+}
+.contact_main .dataTables_filter input[type="text"]{
+    border-radius: 5px;
+    height: 40px;
+    left: 40px;
+    position: absolute;
+    top: 40px;
+    width: 83%;
+}
+.contact_main .form_search input[type="text"]{
+    margin: 38px !important;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    font-style: italic;
+    opacity: 0;
+}
+.contact_main .data_search .dataTables_wrapper > div.row-fluid:first-child{
+    /*display: none;*/
+}
+.main_content .contact{
+    position: relative;
+}
+.main_content .contact a{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 35px;
+}
+.contact_main .action{
+    width: 10%;
+}
+.data_search{
+    margin-top: -25px;
+}
+.data_search .row-fluid:first-child .span6:first-child{
+    display: none;
+}
+.data_search .row-fluid:first-child .span6:nth-child(2){
+    color: #FFF;
+}

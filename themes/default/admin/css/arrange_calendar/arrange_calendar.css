@@ -1,0 +1,458 @@
+.table_data .teacher{
+    display: inline-block;
+    background: #d9d9d9;
+    padding: 5px 10px;
+    margin-left: 10px;
+    position: relative;
+}
+.table_data .teacher .icon_del{
+    position: absolute;
+    top: -3px;
+    border-radius: 15px;
+    background: #d9d9d9;
+    color: #333;
+    line-height: 9px;
+    right: -3px;
+    padding: 2px;
+    display: none;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+.table_data .field_info,.table_data .info_teacherBackup,.table_data .info_assistant {
+    position: relative;
+}
+.table_data .field_info .icon_teacher,.table_data .info_teacherBackup .icon_teacher,.table_data .info_assistant .icon_teacher{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.table_data .field_info .teacher{
+    background: green;
+    color: #fff;
+}
+.field_info .btn_add_teacher{
+    display: none;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    background: rgba(51, 51, 51, 0.19);
+
+}
+.field_info:hover .btn_add_teacher{
+    display: block;
+}
+
+.table_data .info_assistant .teacher{
+    background: blue;
+    color: #fff;
+}
+.table_data .field_info .teacher:hover .icon_del{
+    display: block;
+}
+.table_data .info_teacherBackup .teacher:hover .icon_del{
+    display: block;
+}
+.table_data .hour{
+    width: 70px;
+}
+.table_data .weekday{
+    cursor: pointer;
+}
+.table_data .title_info .info_class
+,.table_data .title_info .hour
+,.table_data .title_info .info_assistant
+,.table_data .title_info .info_employee 
+,.table_data .title_info .info_teacherBackup
+,.table_data .title_info .detail_teacher
+,.table_data .title_info .list_assistant
+,.table_data .title_info .list_teacher{
+    background: #d9d9d9;
+    text-align: center;font-weight: bold;
+    border-left: 1px solid #cccccc;
+}
+.table_data .info_class{
+    border-left: 1px solid #ccc;
+    width: 120px;
+}
+.table_data .info_assistant{
+    border-left: 1px solid #ccc;
+    width: 150px;
+}
+.table_data .info_employee{
+    border-left: 1px solid #ccc;
+    width: 150px;
+}
+.table_data .info_teacher{
+    border-left: 1px solid #ccc;
+    width: 150px;
+}
+.table_data .info_teacherBackup{
+    border-left: 1px solid #ccc;
+    width: 150px;
+}
+.table_data .info_teacherBackup .teacher{
+    margin-bottom: 10px;
+}
+.table_data .list_teacher .teacher{
+    margin-bottom: 10px;
+}
+.table_data .title_weekday .weekday{
+    background-color: #810c15;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.table_data .info_teacher .info_field{
+    font-size: 12px;
+}
+.fixed_wrap{
+    position: fixed;
+    bottom: 150px;
+    z-index: 10000;
+    right: 0px;
+    background: #fff;
+    border: 1px solid #810c15;
+    /*box-shadow: -2px 2px 1px 0px #d9d9d9;*/ 
+    cursor: pointer;
+    border-right: none;
+}
+.calendar_wrap{
+}
+.row_field span{
+    display: inline-block;
+}
+.field_teacher{
+    padding: 2px 0px;
+    width: 155px;
+    padding-left: 5px;
+}
+.field_teacher div{
+    /*    white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 80%;*/
+}
+.content_support{
+    height: 250px;
+}
+.content_support .mCSB_container {
+    width: auto;
+    margin-right: 0px;
+    overflow: hidden;
+}
+.content_support .mCustomScrollBox>.mCSB_scrollTools {
+    width: 5px;
+    height: 100%;
+    top: 0;
+    right: 0px;
+    z-index: 9999;
+}
+.field_h1{
+    padding: 2px 0px;
+    text-align: center;
+    width: 30px;
+
+}
+.field_h2{
+    padding: 2px 0px;
+    text-align: center;      
+    width: 30px;
+}
+.title_support{
+    text-align: center;
+    background: #810c15;
+    color: #fff;
+}
+.row_field_3{
+    background: #fff;   
+}
+.row_field_2{
+    background: green;
+    color: #fff;
+
+}
+.row_field_1{
+    background: red;
+    color: #fff;
+}
+.row_field{
+    border-bottom: 1px #810c15 solid;
+}
+.info_support{
+    width: 195px;
+}
+.action_fixed{
+    cursor: pointer;
+    position: absolute;
+    right: -70px;
+    text-align: center;
+    color: #fff;
+    display: none;
+    width: 160px;
+    height: 20px;
+    background: #810c15;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -webkit-transform:rotate(-90deg); /* Opera, Chrome, and Safari */
+}
+
+
+.table_arrange{
+    font-size: 11px;
+    display: inline-block;
+    vertical-align: top;
+}
+.table_arrange th {
+    color: #810c15;
+    font-weight: bold;
+    font-size: 12px;
+}
+.table_arrange tr>th:last-child{
+    border-right: none;
+}
+.hour{
+    display: inline-block;
+    width: 70px;
+
+}
+.e_table_data{
+    position: relative;
+}
+#i_row_data_title{
+    top: 52px;
+    left: 100px;
+    position: fixed;
+    display: none;
+    background: #fff;
+    width: 88%;
+    z-index: 999;
+    white-space: nowrap;
+}
+.hour .info_hour{
+}
+.hour_taskbar{
+    border-bottom: 5px #810c15 solid;
+    vertical-align: top;
+}
+.weekday{
+    display: inline-block;
+    width: 155px;
+}
+.row_data{
+    /*min-height: 70px;*/
+}
+.row_data_title .hour,.row_data_title .weekday{
+    text-align: center;
+    font-weight: bold;
+}
+.row_data_title .taskbar{
+    border:none;
+}
+#i_row_data_title .taskbar{
+    vertical-align: bottom;
+    border-bottom: 5px #810c15 solid;
+}
+.taskbar{
+    vertical-align: top;
+    border-top: 5px #810c15 solid;
+}
+.color_type_1{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: #7fba00;
+    margin-right: 2px;
+}
+.color_type_2{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: #ffc11b;
+    margin-right: 2px;
+}
+.color_type_3{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: #810c15;
+    margin-right: 2px;
+}
+.info_class{
+    margin-top: 1px;
+    height: 40px;
+    background: #f0f0f0;
+    border: 1px solid #DDA9A9;
+    margin-bottom: 3px;
+}
+.info_class_speed{
+}
+.info_class_empty{
+    margin-top: 1px;
+    height: 43px;
+}
+.name_class{
+    font-size: 12px;
+    width: 52px;
+    text-align: center;
+    float: left;
+}
+.icon_status_1{
+    height: 8px;
+    width: 8px;
+    border-radius: 8px;
+    background: #7fba00;
+    margin: 2px;
+}
+.icon_status_2{
+    height: 8px;
+    width: 8px;
+    border-radius: 8px;
+    background: #ffc11b;
+    margin: 2px;
+}
+.icon_status_3{
+    height: 8px;
+    width: 8px;
+    border-radius: 8px;
+    background: #810c15;
+    margin: 2px;
+}
+.info_teacher{
+    float: right;
+    width: 92px;
+    margin-right: 8px;
+}
+.teacher{
+    position: relative;
+}
+.info_teacher .teacher{
+    margin-left: 3px;
+    cursor: pointer;
+}
+.info_teacher .field_info{
+    height: 20px;
+
+}
+.assistant{
+    margin-left: 3px;
+    border-top: 1px solid #DDA9A9;
+}
+.wrap_teacher{
+    width: 153px;
+    height: 86px;
+    line-height: 15px;
+    overflow: hidden;
+}
+.info_field{
+    font-size: 11px !important;
+}
+.title_wrap_teacher{
+    color: #810c15;
+    font-weight: bold;
+} 
+.wrap_teacher .teacher,.info_employee{
+    display: inline-block;
+    margin-bottom: 2px;
+    padding: 0px 3px;
+    background: #82b6de;
+    color: #fff;
+    line-height: 15px;
+    cursor: pointer;
+}
+.icon_del{
+    display: none;
+    position: absolute;
+    cursor: pointer;                                                                                         
+    top: 2px;
+    right: -2px;
+    border-radius: 15px;
+    color: #333;
+    line-height: 10px;
+    display: none;
+    border: 1px solid #ccc;
+}
+.icon_del:hover{
+    background: #ccc
+}
+.info_teacher .teacher:hover .icon_del{
+    display: block;
+}
+.wrap_teacher .mCSB_container {
+    width: auto;
+    margin-right: 0px;
+    overflow: hidden;
+}
+.wrap_teacher .mCustomScrollBox>.mCSB_scrollTools {
+    width: 5px;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+.e_wrap_info_class{
+    height: 250px;
+    overflow: hidden;
+}
+.e_wrap_info_class .mCustomScrollBox>.mCSB_scrollTools{
+    right: -5px;
+}
+.e_wrap_info_class .mCSB_container{
+    margin-right: 0px;
+}
+.slimScrollBar{
+    width: 4px !important;
+}
+.wrap_info_class .input_arrange{
+    border: none !important;
+    background: none !important;
+    min-height: 19px !important;
+    line-height: 19px !important;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none;
+    padding-left: 1px;
+    width: 100%;
+    text-align: right;
+    padding-right: 6px;
+}
+
+.wrap_info_class .item_class{
+    margin-bottom: 3px;
+}
+
+.info_class_speed .code_class{
+    background: green;
+    color: #fff;
+}
+
+.ui-autocomplete-category {
+    font-weight: bold;
+    padding: .2em .4em;
+    margin: .8em 0 .2em;
+    line-height: 1.5;
+}
+a.ui-corner-all{
+    margin-left: 20px;
+    padding :0;
+}
+li.ui-menu-item a.ui-corner-all:hover{
+    margin-left: 20px;
+}
+input[type_teacher="e_available"], .e_available{
+    color: #4d90fe;
+}
+input[type_teacher="e_fixed"], .e_fixed{
+    color: #333;
+}
+input[type_teacher="e_backup"], .e_backup{
+    color: red;
+}
+.ui-menu .ui-menu-item a.ui-state-focus{
+    font-weight: normal;
+    margin: 0 0 0 20px !important;
+}
+.ui-widget-content .ui-state-focus{
+    background: #dadada url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;
+    cursor: pointer;
+    border: none;
+}

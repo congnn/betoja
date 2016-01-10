@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08-04-2015, 16:24:27
+    Author     : vanphu92
+*/
+.main{
+    overflow-x: scroll;
+}
+.taskbar {
+    vertical-align: top;
+    border-top: 5px #810c15 solid;
+}
+.row_data_title .date, .row_data_title .weekday {
+    text-align: center;
+    font-weight: bold;
+}
+.row_data_title .taskbar {
+    border: none;
+}
+.weekday {
+    display: inline-block;
+    width: 66.1px;
+}
+.date {
+    display: inline-block;
+    width: 70px;
+}
+.register_type_2{
+    background-color: blue;
+    color: white;
+}
+.teacher_schedule{
+    background-color: yellow;
+    color: black;
+}
+.teacher_schedule_backup{
+    background-color: green;
+    color: red;
+}
+.register_type_3{
+    background-color: red;
+    color: white;
+}
+.register_type_4{
+    background-color: darkgray;
+    color: black;
+}
+div.item_class{
+    margin: 1px 0;
+}
+div.e_wrap_scroll{
+    /*height: 50px;*/
+}
+#i_row_data_title {
+    top: 51px;
+    left: 100px;
+    position: fixed;
+    display: none;
+    background: #fff;
+    width: 88%;
+    z-index: 999;
+    white-space: nowrap;
+}
+#i_row_data_title .taskbar{
+    border-bottom: 5px #810c15 solid;
+}
+.row_teacher{
+    white-space: nowrap;
+    width: 66px;
+    height: 20px;
+    float: left;
+    margin-left: 3px;
+    margin-top: 1px;
+}
+.teacher{
+    width: 93%;
+    margin-top: -27px;
+    margin-left: 73px;
+    float: left;
+}
+.title_date{
+    
+}

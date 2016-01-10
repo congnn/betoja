@@ -1,0 +1,12 @@
+th[field_name="status"]{
+    display: none;
+}
+th[field_name="typeLink"]{
+    display: none;
+}
+td[for_key="status"], td[for_key="typeLink"]{
+    display:none;
+}
+#uniform-teacher_type{
+    margin-bottom: 3px !important;
+}

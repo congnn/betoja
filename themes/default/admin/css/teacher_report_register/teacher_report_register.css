@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 16, 2015, 2:07:21 PM
+    Author     : Tùng Arsenal
+*/
+*{
+    box-sizing:content-box !important;
+}
+.data_report table{
+    width: 100%;
+    margin-top: 10px;
+}
+.data_report table td,.data_report table th{
+    border: 1px solid #ccc;
+}
+.data_report table td.register_header{
+    background-color: #274E13;
+    color: #FFF;
+}
+.data_report table td.register{
+    background-color: #D9EAD3;
+}
+.data_report table td.registered_header{
+    background-color: #E6B8AF;
+}
+.data_report table td.registered{
+    background-color: #E6B8AF;
+}
+.data_report table td.registered_total{
+    background-color:  #F1C232;
+}
+.registered_total .assistant{
+    background-color: #FFFF00;
+}
+.registered_total .vn{
+    background-color: #00DA00;
+}
+.registered_total .vn_sbasic{
+    background-color: #E597E8;
+}
+.registered_total div{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.is_register{
+    background-color: #FBFD49;
+}
+.e_datetime{
+    margin-bottom: 0px !important;
+    width: 100px;
+}
+.header_fixed{
+    position: fixed;
+    top: 50px;
+    bottom: auto;
+    display: none;
+    z-index: 1;
+    background-color: #FFF;
+}

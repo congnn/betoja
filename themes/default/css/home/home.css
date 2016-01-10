@@ -1,0 +1,535 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 13, 2015, 11:27:21 PM
+    Author     : Tùng Arsenal
+*/
+.list_room{
+    display: block;
+        margin-left: 15px;
+    border-radius: 4px;
+    margin-bottom: 100px;
+}
+.list_room .conference:first-child{
+    margin-top: 0px;
+}
+
+.tab_select{
+    list-style: none;
+    margin: 20px 0;
+}
+.tab_select li{
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: #fff;
+       font-size: 12pt;
+    text-transform: uppercase;
+
+}
+.stepContent{
+       background-color: #f9f9f9;
+    padding: 15px;
+    color: #34495e;
+}
+.list_room {
+    margin-left: 0;
+    margin-top: 15px;
+}
+.tab_select li a{
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+}
+.tab_select li a:hover{
+    text-decoration: none;
+}
+#step-1,#step-2{
+    margin-left: 0;
+}
+.tab_select a.selected .stepContent{
+      background: #fff;
+    border-bottom: 2px solid #0a9d59;
+    font-weight: bold;
+    color: #0a9d59;
+}
+
+.list_room .conference{
+    margin-top: 20px;
+    border: 1px solid #ededed;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+}
+.img_bg{
+    background:url(../../images/home/up-arrow.png) no-repeat center top;
+    height: 30px;
+}
+.tab_select a.selected .img_bg{
+    
+}
+.number_room{
+        background: #cacaca;
+    border-radius: 13px;
+    color: #3f3f3f;
+    padding: 2px 7px;
+}
+.conference_content{
+    height: 240px;
+}
+.conference_content div.item{
+    height: 100%;
+
+}
+.conference_content .enter_class{
+    margin-left: 0px;
+    height: 34%;
+}
+.get_into_class_head a.go_to_room{
+    background-color: #f68a1e;
+}
+.count_down_head .get_into_class_head{
+          width: 22%;
+    float: left;
+}
+.conference_content .enter_class a.go_to_room{
+    background-color: #f68a1e;
+}
+.count_down_head .is-countdown{
+    float: left;
+        margin-left: 16%;
+}
+.count_down_head .enter_class a {
+  
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+ 
+    font-size: 14px;
+   
+    padding: 10px;
+  
+   
+}
+.conference_content .enter_class a{
+    background-color: #ccc;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    margin: 22px auto;
+    padding: 10px;
+    text-align: center;
+    width: 85%;
+}
+.conference_content .count_down{
+    height: 69%;
+}
+.conference_content .left_content{
+    width: 28%;
+    height: 94%;
+}
+.conference_content .right_content{
+    width: 72%;
+    height: 100%;
+    margin-left: 0px;
+    overflow: hidden;
+}
+.conference_content .right_content .item{
+    position: relative;
+}
+.conference_content .right_content .item div.span12{
+    /*position: absolute;*/
+}
+.conference_content .right_content .span3{
+    width: 25%;
+    margin-left: 0px;
+    border-left: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    transition: width 1s;
+        cursor: pointer;
+}
+.conference_content .right_content .item .title{
+    height: 100%;
+    transition: height 1s, border-bottom 1s;
+}
+.conference_content .left_content .count_down{
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+        position: relative;
+}
+.conference_content .right_content .span12{
+    margin-left: 0px;
+}
+.conference_content .right_content .item .title h3{
+    margin-top: 156px;
+    text-align: center;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #34495e;
+}
+.conference_content .right_content .document .title h3,.conference_content .right_content .member .title h3{
+    margin-top: 134px;
+}
+.conference_content .right_content .item.agenda .title{
+    background-image: url(../../images/home/agenda.png);
+    background-repeat: no-repeat;
+    background-position: center 31%;
+}
+.conference_content .right_content .item.agenda .title .edit img{ 
+    display: none;
+}
+.conference_content .right_content .item.document .title{
+    background-image: url(../../images/home/document.png);
+    background-repeat: no-repeat;
+    background-position: center 35%;
+}
+.conference_content .right_content .item.member .title{
+    background-image: url(../../images/home/member.png);
+    background-repeat: no-repeat;
+        background-position: 55% 28%;
+}
+.conference_content .right_content .item.config .title{
+    background-image: url(../../images/home/config.png);
+    background-repeat: no-repeat;
+    background-position: center 29%;
+}
+.conference_content .right_content .item .title.changed{
+   height: 22%;
+    background-position: 10px 12px;
+    position: relative;
+    border-left: 4px solid #0a9d59;
+}
+.conference_content .right_content .agenda .title.changed{
+    background-image: url(../../images/home/agenda_change.png);
+}
+.conference_content .right_content .document .title.changed{
+    background-image: url(../../images/home/document_change.png);
+}
+.conference_content .right_content .member .title.changed{
+    background-image: url(../../images/home/member_change.png);
+}
+.conference_content .right_content .config .title.changed{
+    background-image: url(../../images/home/config.png);
+    background-size: 12%;
+}
+.conference_content .right_content .item .title.changed a{
+    background-image: url(../../images/home/edit.png);
+    background-repeat: no-repeat;
+    position: absolute;
+      right: 16px;
+    top: 17px;
+}
+.conference_content .right_content .item .title.changed a.edit img{
+    display: block;
+}
+.conference_content .right_content .item .title.changed h3{
+        margin-top: 14px;
+    margin-left: 60px;
+    text-align: left;
+    color: #0a9d59;
+    font-weight: bold;
+}
+.conference_content .right_content .item .content{
+    display: none;
+    height: 0%;
+    position: relative;
+    transition: height 1s, display 1s;
+}
+ .conference_content .right_content .item .content.changed{
+    display: block;
+       height: 78%;
+        border-top: 1px solid #ecf0f1;
+}
+.span95{
+    width:80% !important;
+}
+.span35{
+    width:20% !important;
+}
+.right_content .document .content .home_upload{
+    border-top:none;
+}
+.conference_content .left_content .count_down center{
+    height: 70%;
+    margin-top: 45px;
+}
+.conference_content .left_content .count_down center .e_time_count{
+    height: 100%;
+    position: relative;
+}
+.conference_content .left_content .count_down center .e_time_count_up {
+    height: 100%;
+    position: relative;
+}
+.conference_content .left_content .count_down center .e_time_count span{
+    font-size: 14pt;
+}
+.conference_content .left_content .count_down center .e_time_count_up span{
+    font-size: 14pt;
+}
+.conference_content .left_content .count_down center .e_time_count span.countdown-row{
+    position: relative;
+    top: 40px;
+    display: block;
+}
+.conference_content .left_content .count_down center .e_time_count_up span.countdown-row{
+    position: relative;
+    top: 40px;
+    display: block;
+}
+.conference_content .left_content .count_down center .e_time_count span.countdown-row span.countdown-section{
+    position: relative;
+         padding: 51px 26px 20px;
+    border-right: 1px solid #ecf0f1;
+}
+.conference_content .left_content .count_down center .e_time_count_up span.countdown-row span.countdown-section{
+    position: relative;
+         padding: 51px 26px 20px;
+    border-right: 1px solid #ecf0f1;
+}
+.conference_content .left_content .count_down center .e_time_count span.countdown-row span.countdown-section span.countdown-amount{
+    font-weight: bold;
+        font-size: 36px;
+    color: #34495e;
+}
+.conference_content .left_content .count_down center .e_time_count_up span.countdown-row span.countdown-section span.countdown-amount{
+    font-weight: bold;
+        font-size: 36px;
+    color: #34495e;
+}
+.conference_content .left_content .count_down center .e_time_count span.countdown-row span.countdown-section:nth-child(2) span.countdown-period {
+    left: 30px;
+   
+}
+.conference_content .left_content .count_down center .e_time_count_up span.countdown-row span.countdown-section:nth-child(2) span.countdown-period {
+    left: 30px;
+   
+}
+.conference_content .left_content .count_down center .e_time_count span.countdown-row span.countdown-section:nth-child(3) span.countdown-period {
+    left: 18px;
+   
+}
+.conference_content .left_content .count_down center .e_time_count_up span.countdown-row span.countdown-section:nth-child(3) span.countdown-period {
+    left: 18px;
+   
+}
+.conference_content .left_content .count_down center .e_time_count span.countdown-row span.countdown-section:nth-child(1) span.countdown-period {
+    left: 18px;
+   
+}
+.conference_content .left_content .count_down center .e_time_count_up span.countdown-row span.countdown-section:nth-child(1) span.countdown-period {
+    left: 18px;
+   
+}
+.conference_content .left_content .count_down center .e_time_count span.countdown-row span.countdown-section:nth-child(3) {
+  
+   border-right: none !important;
+}
+.conference_content .left_content .count_down center .e_time_count_up span.countdown-row span.countdown-section:nth-child(3) {
+  
+   border-right: none !important;
+}
+.conference_content .left_content .count_down p{
+  text-align: center;
+        font-size: 13px;
+    margin: 0px 0;
+    position: absolute;
+    width: 100%;
+    background: #33A350;
+    padding: 0px 0px;
+    color: #fff;
+}
+.right_content .member .content .home_invite img:hover{
+    width: 110%;
+}
+.conference_content .left_content .count_down center .e_time_count span.countdown-row span.countdown-section span.countdown-period{
+   
+    position: absolute;
+    top: -9px;
+}
+.conference_content .left_content .count_down center .e_time_count_up span.countdown-row span.countdown-section span.countdown-period{
+   
+    position: absolute;
+    top: -9px;
+}
+.conference_content .left_content .count_down center .e_time_count span.countdown-row span.countdown-section span{
+    padding: 4px;
+}
+.conference_content .left_content .count_down center .e_time_count_up span.countdown-row span.countdown-section span{
+    padding: 4px;
+}
+.conference_content .right_content .item.agenda .agenda_item{
+    padding: 5px;
+        border-bottom: 1px solid #dee1e2;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 29px;
+    font-size: 13px;
+    color: #000;
+}
+.conference_content .right_content .item.agenda .agenda_item > span{
+  
+}
+.conference_content .right_content .item.agenda .agenda_item span:nth-child(2){
+ 
+}
+.mCustomScrollBox > .mCSB_scrollTools{
+    width: 6px !important;
+}
+.mCSB_container{
+   
+}
+.right_content .document span.number_file,.right_content .member span.number_member{
+       color: #fff;
+    font-size: 12pt;
+    font-weight: bold;
+    left: 67.5%;
+    position: relative;
+    top: 65px;
+    border-radius: 20px;
+    background: #f68a1e;
+    padding: 5px 10px;
+
+}
+.right_content .item .changed span.number_file,.right_content .item .changed span.number_member{
+    display: none;
+}
+.right_content .document .content > div{
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 100%;
+}
+.right_content .document  .file_list,.right_content  .agenda .content,.right_content .member .member_list  {
+   
+    
+}
+.right_content .member .content > div{
+    height: 100%;
+}
+.right_content .document .content .file_list a{
+   padding: 5px;
+    border-bottom: 1px solid #dee1e2;
+    width: 90%;
+        margin-left: 5%;
+    line-height: 29px;
+    font-size: 13px;
+    color: #000;
+    overflow: hidden;
+}
+.conference_content .right_content .home_invite{
+
+    border-top: none;
+  
+}
+.right_content .document .content > div a::before{
+    margin-right: 5px;
+}
+.right_content .document .content .home_upload img{
+              padding: 99% 25% 20%;
+}
+.right_content .member .content .home_invite img {
+       padding: 50% 36% 20%;
+}
+.right_content .document .content .home_upload p,.right_content .member .content .home_invite p{
+    text-align: center;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+.right_content .document .content .home_upload,.right_content .member .content .home_invite{
+    border-left: 1px solid #ededed;
+}
+.conference_content .right_content .member .member_list .member_item{
+    background-image: url(../../images/home/list_member.png);
+    background-repeat: no-repeat;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    margin: 10px 1px;
+    height: 30%;
+    position: relative;
+        background-position: center;
+}
+.creat_room_now{
+       float: right;
+    margin: 10px;
+}
+.conference_content .right_content .member .member_list .member_item p{
+    bottom: -55%;
+    left: 17%;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 70%;
+}
+.count_down_head .countdown-period{
+  display: none;
+}
+
+.count_down_head .countdown-amount{
+       font-weight: bold;
+    font-size: 32px;
+    color: #34495e;
+    padding: 0 10px;
+}
+.count_down_head{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 124px;
+    top: 20px;
+}
+.wrap_content_list{
+    height: 90%;
+    overflow-y: auto;
+}
+@media only screen and (max-width: 1280px) {
+    
+    .conference_content .left_content .count_down center .e_time_count span.countdown-row span.countdown-section {
+  
+     padding: 51px 6% 20px;
+    
+}
+.conference_content .left_content .count_down center .e_time_count_up span.countdown-row span.countdown-section {
+  padding: 51px 6% 20px;
+}
+.conference_content .left_content .count_down center .e_time_count span.countdown-row span.countdown-section:nth-child(3) span.countdown-period {
+    left: 9%;
+}
+.conference_content .left_content .count_down center .e_time_count_up span.countdown-row span.countdown-section:nth-child(3) span.countdown-period {
+    left: 9%;
+}
+.conference_content .left_content .count_down center .e_time_count_up span.countdown-row span.countdown-section:nth-child(2) span.countdown-period {
+    left: 23%;
+}
+.conference_content .left_content .count_down center .e_time_count span.countdown-row span.countdown-section:nth-child(2) span.countdown-period {
+    left: 24%;
+}
+.conference_content .left_content .count_down center .e_time_count span {
+    font-size: 12pt;
+}
+}
+@media only screen and (max-width: 1140px) {
+.conference_content .left_content .count_down center .e_time_count_up span {
+    font-size:12pt;
+}    
+    
+.conference_content .left_content .count_down center .e_time_count span {
+    font-size: 12pt;
+}
+.count_down_head .is-countdown {
+    margin-left: 25%;
+}
+}
+@media only screen and (max-width: 850px) {
+.conference_content .left_content .count_down center .e_time_count_up span.countdown-row span.countdown-section {
+  padding: 51px 4% 20px;
+}
+.conference_content .left_content .count_down center .e_time_count_up span.countdown-row span.countdown-section:nth-child(1) span.countdown-period {
+    left: 10%;
+}
+}

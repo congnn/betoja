@@ -1,0 +1,56 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 16, 2015, 8:43:38 PM
+    Author     : Tùng Arsenal
+*/
+
+.main_content .package_main{
+       margin-top: 20px;
+    background-color: #FFF;
+    width: 98.5%;
+    margin-left: 14px;
+}
+.table_package{
+    width: 100%;
+    text-align: center;
+}
+.table_package thead th{
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #0A9D59;
+    color: #586470;
+}
+.table_package td{
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.table_package a{
+
+}
+.table_package a.disabled{
+    background-color: #ccc;
+    cursor: text;
+}
+.table_package a:hover{
+    text-decoration: none;
+}
+.package_main .dataTables_wrapper{
+  
+}
+.package_main .dataTables_wrapper > div.row-fluid:first-child{
+    display: none;
+}
+table.dataTable thead th:first-child, table.dataTable td:first-child{
+    border-left: 1px solid #ccc;
+}
+@media only screen and (max-width: 1024px) {
+.main_content {
+    width: 91% !important;
+    margin-left: 53px !important;
+}
+}  

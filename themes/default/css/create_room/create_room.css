@@ -1,0 +1,981 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 18, 2015, 8:06:34 PM
+    Author     : Tùng Arsenal
+*/
+.create_room_main > .create_room{
+    height: auto;
+    background: transparent;
+   
+    margin-top: 20px;
+}
+.swMain {
+    position:relative;
+    display:block;
+    margin:0;
+    padding:0;
+    border: 0px solid #CCC;
+    overflow:visible;
+    float:left;
+    width:980px;
+}
+.swMain .stepContainer {
+    display:block;
+    position: relative;
+    margin: 0;
+    padding:0;    
+      height: auto !important;
+    overflow:hidden;
+    clear:both;
+
+}
+.time_detail input{
+    color: #575757;
+}
+#i_form_create_room .input_name {
+        font-size: 12pt;
+    padding-left: 20px;
+    color: #000;
+}
+.swMain .stepContainer div.content {
+   
+    float:left;
+    margin: 0; 
+    font-weight: normal; 
+    font-size: 13px;
+    color:#5A5655;   
+    text-align:left;
+    overflow:visible;    
+    z-index:88; 
+    -webkit-border-radius: 5px;
+    -moz-border-radius  : 5px;
+    width:100%;
+    clear:both;
+}
+#i_invite_table_wrapper{
+    height: 250px;
+    overflow-y:auto;
+}
+.swMain div.actionBar {
+      margin-bottom: 30px;
+    height: 30px;
+       width: 35%;
+    margin: 10px auto 30px;
+}
+
+.swMain .stepContainer .StepTitle {
+    display:block;
+    position: relative;
+    margin:0;   
+    border:1px solid #E0E0E0;
+    padding:5px;   
+    font: bold 16px Verdana, Arial, Helvetica, sans-serif; 
+    color:#5A5655;   
+    background-color:#E0E0E0;
+    clear:both;
+    text-align:left; 
+    z-index:88;
+    -webkit-border-radius: 5px;
+    -moz-border-radius  : 5px;    
+}
+.swMain ul.anchor {
+    position: relative;
+    width: 100%;
+    display:block;
+    float:left;
+    list-style: none;
+    padding: 0px;  
+    margin: 0px 0 10px;      
+    height: 150px;
+        border-radius: 5px;
+    clear: both;
+    border: 0px solid #CCCCCC;    
+    background: #FFF;
+    border-radius: 5px;
+    
+}
+.swMain ul.anchor li{ 
+    position: relative; 
+    display:block;
+    margin: 0;
+    width: 25%;
+    height: 100%;    
+    float: left;
+}
+/* Anchor Element Style */
+.swMain ul.anchor li a {
+    display:block;
+    position:relative;
+    float:left;
+    margin:0;
+    height:100%;
+    width:100%;
+    text-decoration: none;
+    outline-style:none;
+    -moz-border-radius  : 5px;
+    -webkit-border-radius: 5px;
+    z-index:99;
+}
+.swMain ul.anchor li a .stepNumber{
+    display: block;
+    text-align: center;
+    font: 13pt Helvetica;
+    color: #34495e;
+}
+.swMain ul.anchor li a.done .stepNumber{
+ 
+    font-weight: bold;
+}
+.swMain ul.anchor li a.selected .stepNumber{
+   
+    font-weight: bold;
+}
+.swMain ul.anchor li a .stepDesc{
+    position:relative;
+    display:block;
+    float:left;
+    text-align: left;
+    padding:5px;
+
+    font: bold 20px Verdana, Arial, Helvetica, sans-serif;
+}
+.swMain ul.anchor li a .stepDesc small{
+    font: normal 12px Verdana, Arial, Helvetica, sans-serif;
+}
+.swMain ul.anchor li a.selected{
+    cursor:pointer;
+    color: #0a9d59;
+}
+.swMain ul.anchor li a .stepContent{
+    position: relative;
+}
+.swMain  hr{
+    border-color: #999999;
+    border-width: 2px 0;
+    left: -50%;
+    margin: 0 !important;
+    position: absolute;
+    z-index: -1;
+        top: 37px;
+    width: 100%;
+ 
+}
+.swMain ul.anchor li a.selected .stepContent hr,.swMain ul.anchor li a.done .stepContent hr{
+    border-color: #f68a1e;
+}
+.swMain ul.anchor li:first-child a .stepContent div.check{
+       margin-top: 24px;
+}
+.swMain ul.anchor li a .stepContent div.check{
+    width: 77px;
+    height: 77px;
+    border-radius: 50px;
+    border: 3px solid #999999;
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 25px auto 13px;
+}
+
+.swMain ul.anchor li a .stepContent .check_step2{
+    background: #fff url(../../images/create_room/check_step2.png);
+}
+.swMain ul.anchor li a .stepContent .check_step3{
+    background: #fff url(../../images/create_room/check_step3.png);
+}
+.swMain ul.anchor li a .stepContent .check_step4{
+    background: #fff url(../../images/create_room/check_step4.png);
+}
+.swMain ul.anchor li a.selected .stepContent div.check{
+    border: 4px solid #f68a1e;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+.swMain ul.anchor li a.selected .stepContent .check_step1,.swMain ul.anchor li a.done .stepContent .check_step1{
+
+    background: #fff url(../../images/create_room/check_select1.png);
+
+}
+.swMain ul.anchor li a.selected .stepContent .check_step2,.swMain ul.anchor li a.done .stepContent .check_step2{
+
+    background: #fff url(../../images/create_room/check_select2.png);
+
+}
+.swMain ul.anchor li a.selected .stepContent .check_step3,.swMain ul.anchor li a.done .stepContent .check_step3{
+
+    background: #fff url(../../images/create_room/check_select3.png);
+
+}
+.swMain ul.anchor li a.selected .stepContent .check_step4,.swMain ul.anchor li a.done .stepContent .check_step4{
+
+    background: #fff url(../../images/create_room/check_select4.png);
+
+}
+.swMain ul.anchor li a.done .stepContent div.check{
+   border: 4px solid #f68a1e;
+    background-repeat: no-repeat;
+    background-position: center center;
+        position: relative;
+}
+.swMain ul.anchor li a.selected:hover {
+
+}
+.swMain ul.anchor li a.done div.check{ 
+ 
+}
+.swMain ul.anchor li a.done { 
+    position:relative;
+    color:#FFF;    
+  
+}
+.swMain ul.anchor li a.done:hover {
+
+}
+.swMain ul.anchor li a.disabled {
+    cursor:pointer;   
+}
+.swMain ul.anchor li a.disabled:hover {
+    color:#CCCCCC;  
+    background: #F8F8F8;     
+}
+
+.swMain ul.anchor li a.error {
+    /*    color:#6c6c6c !important;  
+        background: #f08f75 !important;
+        border: 1px solid #fb3500 !important;      */
+}
+.swMain ul.anchor li a.error .check{
+    border: 4px solid #e9322d !important;
+    background: url(../../images/create_room/check-red.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+.swMain ul.anchor li a.error .stepNumber{
+    color: #e9322d;
+}
+.swMain ul.anchor li a.error:hover {
+    color:#000 !important;       
+}
+
+.swMain .buttonNext {
+    display:block;
+    float:right;
+    /*margin:5px 3px 0 3px;*/
+    padding:4px;
+    width: 30%;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+
+    color:#FFF;
+    outline-style:none;
+    background-color:   #F68A1E;
+    border: 1px solid #ededed;
+    -moz-border-radius  : 5px; 
+    -webkit-border-radius: 5px;    
+}
+.swMain .buttonDisabled {
+        color: #2c3e50 !important;
+    background-color: #fff!important;
+    cursor: text;
+}
+.swMain .buttonPrevious {
+    display:block;
+    float:right;
+    /*margin:5px 3px 0 3px;*/
+    padding:4px;
+   
+    text-decoration: none;
+    text-align: center;
+     font-weight: bold;
+    font-size: 13px;
+   width: 30%;
+    color:#FFF;
+    outline-style:none;
+    background-color:   #F68A1E;
+    border: 1px solid #ededed;
+    -moz-border-radius  : 5px; 
+    -webkit-border-radius: 5px;    
+}
+.swMain .buttonFinish {
+    display:block;
+    float:right;
+    /*margin:5px 10px 0 3px;*/
+    padding:4px;
+    width: 30%;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    color:#FFF;
+    outline-style:none;
+    background-color:   #F68A1E;
+    border: 1px solid #ededed;
+    -moz-border-radius  : 5px; 
+    -webkit-border-radius: 5px;    
+}
+.actionBar a{
+    margin: 3px;
+}
+
+/* Form Styles */
+
+.txtBox {
+    border:1px solid #CCCCCC;
+    color:#5A5655;
+    font:13px Verdana,Arial,Helvetica,sans-serif;
+    padding:2px;
+    width:430px;
+}
+.txtBox:focus {
+    border:1px solid #EA8511;
+}
+
+.swMain .loader {
+    position:relative;  
+    display:none;
+    float:left;  
+    margin: 2px 0 0 2px;
+    padding:8px 10px 8px 40px;
+    border: 1px solid #FFD700; 
+    font: bold 13px Verdana, Arial, Helvetica, sans-serif; 
+    color:#5A5655;       
+    background: #FFF url(../images/loader.gif) no-repeat 5px;  
+    -moz-border-radius  : 5px;
+    -webkit-border-radius: 5px;
+    z-index:998;
+}
+.swMain .msgBox {
+    position:relative;  
+    display:none;
+    float:left;
+    margin: 4px 0 0 5px;
+    padding:5px;
+    border: 1px solid #FFD700; 
+    background-color: #FFFFDD;  
+    font: normal 12px Verdana, Arial, Helvetica, sans-serif; 
+    color:#5A5655;         
+    -moz-border-radius  : 5px;
+    -webkit-border-radius: 5px;
+    z-index:999;
+    min-width:200px;  
+}
+.swMain .msgBox .content {
+    font: normal 12px Verdana,Arial,Helvetica,sans-serif;
+    padding: 0px;
+    float:left;
+}
+.swMain .msgBox .close {
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    color: #CCC;
+    display: block;
+    float: right;
+    margin: 0 0 0 5px;
+    outline-style: none;
+    padding: 0 2px 0 2px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+.swMain .msgBox .close:hover{
+    color: #EA8511;
+    border: 1px solid #EA8511;  
+}
+.span12.time_start{
+       background: url(../../images/create_room/clock_background.png) no-repeat center;
+    margin: 10px 0 20px 0;
+}
+.span12.step1_agenda{
+    margin-left: 0px;
+   
+    position: relative;
+        background: #fff;
+}
+.room_end,.room_start{
+    background: #fff;
+    border-radius:5px;
+    height: 90px;
+    
+}
+.add_agende{
+        background: url(../../images/create_room/add_agende.png) no-repeat center;
+}
+.title_time{
+        font-size: 13px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #f68a1e;
+}
+.time_detail{
+    border-left: 1px solid #ecf0f1;
+        height: 100%;
+    padding-left: 10px;
+        margin-left: 4px !important;
+           background: url(../../images/create_room/date_time_icon.png) no-repeat 4% center;
+}
+#i_form_create_room .start_day .hasDatepicker,#i_form_create_room .end_day .hasDatepicker {
+         border-radius: 5px;
+    margin-top: 5px;
+    height: 23px;
+    padding-left: 8px;
+   color: #000;
+        min-height: 23px;
+}
+.span12.step1_agenda .span12{
+    margin-left: 0px;
+}
+.span12.step1_agenda .table_agenda table tr td:nth-child(2){
+    width: 58%;
+}
+.span12.step1_agenda .table_agenda table tr td.dataTables_empty{
+    text-align: center;
+}
+.span12.step1_agenda .table_agenda table{
+    display: table;
+}
+#step-1 .dataTables_wrapper > .row-fluid:first-child{
+    display: none;
+}
+#step-1 .table.use_datatable.dataTable{
+    width: 100% !important;
+}
+#step-3 .select_invite .dataTables_filter input{
+        left: 0px;
+    padding: 0px 0 0 38px;
+    position: absolute;
+    top: 9px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-style: italic;
+    width: 100%;
+    background: #fff url("../../images/create_room/search.png") no-repeat 1% center;
+}
+#step-3 .select_invite table{
+    position: relative;
+    top: -30px;
+        background: #fff;
+        margin-bottom: -30px;
+}
+#step-3 .select_invite table td{
+    text-align: center;
+}
+#step-3 .dataTables_length{
+    /*    position: absolute;
+        top: 338px;*/
+    display: none;
+}
+#i_invite_table_wrapper .row-fluid:first-child div:first-child{
+    /*position: relative;*/
+}
+#i_invite_table_length select{
+    min-height: 29px !important;
+    margin-left: 10px;
+}
+.file_progress{
+        height: 20px;
+    width: 254px;
+    border-radius: 4px;
+    border: 1px solid #a5d6c1;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+p.file_allow{
+       padding-left: 5px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #2c3e50;
+}
+.span12.step1_agenda .table_agenda table thead{
+   
+    color: #5A5655
+}
+.span12.step1_agenda > h2{
+          border-left: 4px solid #0A9D59;
+    padding: 4px 10px;
+    margin-bottom: 0px;
+    width: 11%;
+    color: #0a9d59;
+    font-size: 13.5pt;
+    float: left;
+}
+.span12.step1_agenda > a{
+       font-size: 20px;
+    position: relative;
+    right: 12px;
+    margin-top: 13px;
+    height: 20px;
+    width: 20px;
+    float: left;
+}
+.span12.step1_agenda > a:hover{
+    text-decoration: none;
+}
+.stepContainer #step-1 .subject{
+   
+}
+.clearboth{
+    clear: both;
+}
+.input_name{
+      
+    background: #fff !important;
+    height: 44px !IMPORTANT;
+        width: 100% !important;
+}
+.width10,.width90{
+    float: left;
+}
+.width10{
+    width: 10%;
+}
+.width90{
+    width: 89%;
+    margin-left: 1%;
+}
+.stepContainer #step-1 .subject h3{
+    color: #0a9d59;
+    font-size: 13.5pt;
+    background: #fff;
+    padding: 8px 12px;
+    width: 100%;
+        text-transform: uppercase;
+            border-left: 4px solid #0a9d59;
+}
+.done_step_1,.done_step_2,.done_step_3,.done_step_4{
+ display: none;
+ background: url(../../images/create_room/icon_step_done.png);
+ height: 28px;
+ width: 28px;
+ position: absolute;
+    bottom: -4px;
+    right: -5px;
+}
+.stepContainer #step-1 .subject div.span10{
+    margin-left: 0px;
+}
+.stepContainer #step-1 .time_start h4{
+    padding: 22px 0 0 20px;
+}
+.stepContainer #step-1 .time_start .span4 h4.end{
+    margin-left: 70px;
+}
+.stepContainer #step-1 .time_start .start_time{
+       margin-left: 11.5%;
+    width: 90%;
+    margin-top: 14px;
+}
+.stepContainer .room_end .end_time{
+       margin-left: 11.5%;
+    width: 90%;
+    margin-top: 14px;
+}
+.stepContainer #step-1 .time_start .start_day{
+       width: 83%;
+    margin-left: 11.5%;
+}
+.stepContainer #step-1 .time_start .end_day{
+        width: 82.5%;
+    margin-left: 11.5%;
+}
+#step-3 .search_invite{
+       border-radius: 5px;
+    display: block;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
+    margin: 10px auto 20px;
+    padding: 8px;
+    opacity: 0;
+}
+#step-3 .select_invite{
+        background-color: #fff;
+            padding-bottom: 30px;
+}
+
+#step-3 .select_invite h3{
+    color: #0a9d59;
+    padding: 9px 0 9px 15px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    border-left: 4px solid #0a9d59;
+    background: #fff;
+    border-top: none;
+}
+.modal-header h3{
+    text-align: center;
+    text-transform: uppercase;
+    color: #0a9d59;
+}
+.dataTables_info{
+    display: none;
+}
+.list_form_upload{
+        margin-bottom: 30px;
+}
+.form-horizontal label.control-label{
+    text-align: left;
+}
+#step-1 .combodate select{
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
+    width: 112px !important
+}
+#step-2 form{
+    padding: 9px;
+    position: relative;
+}
+#step-2 form .uploaded{
+    background-image: url(../../images/create_room/check.png);
+    background-position: 0 4px;
+    background-repeat: no-repeat;
+    background-size: 30px auto;
+}
+#step-2 form .filename{
+    margin-left: 20px;
+}
+#step-2 form .progressbar{
+      background-color: #0A9D59;
+    opacity: 1;
+    height: 23px;
+    width: 0;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.show_filename_css{
+         width: 11%;
+    float: left;
+    padding: 0px 0 0 10px;
+    overflow: hidden;
+    font-weight: bold;
+    color: #c0c0c0;
+    white-space: nowrap;
+    margin-right: 10px;
+    height: 30px;
+        cursor: pointer;
+}
+.bt_upload{
+     width: 264PX;
+    height: 23px;
+    background: #fff;
+    border: 1px solid #a5d6c1;
+    border-radius: 5px;
+    float: left;
+    text-align: left;
+    position: relative;
+}
+.fileupload{
+        opacity: 0;
+    position: absolute;
+      width: 264px !important;
+    height: 25px !important;
+      
+}
+.show_filename{
+    float: left;
+    width: 100px;
+    overflow: hidden;
+}
+#step-2 form input[type=submit]{
+  background: url("../../images/create_room/upload.png");
+    background-repeat: no-repeat;
+    border: medium none;
+    padding: 3px 5px;
+    width: 55px;
+}
+#step-4 > h2{
+   background-image: url(../../images/create_room/icon_step_done.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    color: #0a9d59;
+    padding: 10px 0 33px 0;
+    text-transform: uppercase;
+    font-size: 13pt;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#step-4 .span12{
+    margin-left: 0px;
+}
+#step-4 .info_conference{
+     
+}
+#step-4 .room_info{
+    border: 1px solid #ededed;
+}
+#step-4 .room_info p{
+    padding: 5px;
+}
+#step-4 .info_conference p{
+       font-size: 10pt;
+    padding: 7px;
+    margin: 0;
+}
+
+#step-4 .count_down{
+    margin: 12px auto;
+    width: 251px;
+}
+#step-4 .count_down .edit_class{
+   border-left: 1px solid #dee1e2;
+    border-right: 1px solid #dee1e2;
+    border-bottom: 1px solid #dee1e2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 55px;
+    position: relative;
+    background: #fff;
+}
+#step-4 .count_down .edit_class > a{
+    background-color: #F68A1E;
+    border-radius: 4px;
+    left: 43px;
+    padding: 4px 67px;
+    position: absolute;
+    color: #FFF;
+    font-size: 9pt;
+    top: 14px;
+}
+#step-4 .count_down .edit_class > a:hover{
+    text-decoration: none;
+}
+#step-4 .count_down .e_time_count{
+    border: 1px solid #dee1e2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#step-4 .count_down .e_time_count .countdown-row.countdown-show3{
+   
+}
+#step-4 .count_down .e_time_count .countdown-section{
+    padding: 30px 27px;
+    position: relative;
+}
+#i_meeting_info{
+    background: #fff;
+}
+#step-4 .count_down .e_time_count .countdown-section .countdown-amount{
+    font-size: 18pt;
+}
+#step-4 .count_down .e_time_count .countdown-section .countdown-period{
+    left: 20px;
+    top: -10px;
+    font-size: 12pt;
+    position: absolute;
+}
+#step-4 .count_down .e_time_count{
+       height: 90px;
+    position: relative;
+    background: #fff;
+}
+#step-4 .count_down center{
+       height: 147px;
+    position: relative;
+}
+#step-4 .count_down .e_time_count span.countdown-row{
+    display: block;
+    position: relative;
+    top: 47%;
+    width: 100%; 
+}
+#step-4 .item{
+   
+}
+.modal-footer .btn{
+    padding: 4px 40px;
+}
+#i_add_form_upload{
+     display: block;
+    background: #0A9D59;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    padding: 0px 10px;
+        margin: 31px 10px;
+}
+form{
+    margin: 0px;
+}
+form input[type='file']{
+   
+}
+.e_delete_file{
+   
+    cursor: pointer;
+ 
+    text-decoration: none;
+}
+.time_start .select2-container{
+       margin-bottom: 10px;
+    width: 44%;
+}
+.list_form_upload .file_info{
+    position: relative;
+    background-color: #ecf0f1;
+    height: 36px;
+}
+.list_form_upload .file_info a{
+    position: absolute;
+    padding: 10px;
+}
+.pagination ul > li > a, .pagination ul > li > span{
+    padding: 0px 12px !important;
+}
+.table_agenda input{
+       min-height: 0px !important;
+    height: 22px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px 1px #b2e0cb;
+}
+input.error, textarea.error{
+   
+}
+input.valid{
+ 
+}
+.next a{
+    width: 100px;
+    margin-right: 10px;
+}
+.dataTables_empty span{
+    float: left;
+}
+.btn-empty-data{
+   float: right;
+    margin-left: 10px;
+    padding: 3px 7px;
+    text-decoration: none;
+    background: #0a9d59;
+    border-radius: 4px;
+}
+.btn-empty-data:hover{
+    text-decoration: none;
+}
+.no_selected{
+    display: none;
+}
+#i_btn_invite_member{
+       position: absolute;
+    right: 15px;
+    top: 68px;
+    z-index: 1;
+    padding: 2px 17px;
+    text-decoration: none;
+    background: #0a9d59;
+    border-radius: 4px;
+    border: none;
+}
+.create_room_main .notify{
+    background-color: #FFF;
+    margin-top: 20px;
+    border:1px solid #ededed;
+        margin-left: 14px;
+}
+.create_room_main .notify p{
+        font-weight: bold;
+    margin-bottom: 0;
+    font-size: 19px;
+    color: #5D5858;
+}
+.create_room_main .notify p{
+    padding: 15px;
+}
+.datatable_agenda {
+    width: 100% !important;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+    top: 51%;
+     height: 20px;
+    background-position: -79px -127px;
+    border: 1px solid #0A9D59;
+    border-radius: 12px;
+    background-color: #F7F1F2;
+}
+.ui-dialog .ui-dialog-content {
+    padding: 2.5em 1em;
+    text-align: center;
+}
+.ui-dialog-buttonset button{
+            background: #BDBFBF;
+    padding: 3px 25px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.ui-dialog-buttonset button:first-child{
+        background: #0A9D59;
+    padding: 3px 25px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.ui-dialog .ui-dialog-titlebar {
+    
+    background: #0A9D59;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+}
+.ui-dialog .ui-dialog-title {
+    width: 100%; 
+}
+@media only screen and (max-width: 1280px) {
+.width90 {
+    width: 83%;
+    margin-left: 1%;
+}
+.width10 {
+    width: 16%;
+}
+
+}
+@media only screen and (max-width: 1280px) {
+
+.span12.step1_agenda > h2{
+
+    width: 14%;
+    
+}
+}
+@media only screen and (max-width: 1024px) {
+    .main_content > .conference {
+      margin-left: 63px !important;
+          width: 93% !important;
+    }
+.width90 {
+    width: 85%;
+    margin-left: 1%;
+}
+.width10 {
+    width: 14%;
+}
+#content.hided, #content.isCollapse.hided, #content.hided.isCollapse {
+   
+    width: 99% !important;
+}
+.stepContainer #step-1 .time_start h4 {
+    padding: 22px 0 0 5px;
+}
+.span12.step1_agenda > h2{
+
+    width: 15%;
+    
+}
+}
+

@@ -1,0 +1,156 @@
+
+/*
+    Created on : Jun 23, 2015, 9:53:18 PM
+    Author     : phamtrong204
+*/
+
+#invite_content{
+    background-color: #fff;
+}
+
+#invite_content .head{
+    padding: 16px 30px 15px 30px;
+
+    border-bottom: 1px solid #ccc;
+}
+#invite_content .head .search{
+
+}
+#invite_content .head .search .search_input{
+    border: 1px solid #ccc;
+
+    border-radius: 30px;
+    padding: 1px 10px 0px 30px;
+    float: left;
+    margin: 0;
+    line-height: 25px;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: none;
+    min-height: 25px !important;
+    background: url(../images/search.png) no-repeat 8px 5px;
+}
+
+#invite_content .head .search .quick_invite{
+    float: right;
+    border: 1px solid #096;
+    border-radius: 5px;
+    padding: 3px 10px 3px 25px;
+    color: #fff;
+    background: url(../images/white-plus.png) no-repeat 10px 8px;
+    background-color: #3d4c6d;
+    cursor: pointer;
+}
+#invite_content .head .search .quick_invite:hover{
+    text-decoration: none;
+}
+
+#invite_content .content{
+    height: 387px;
+    overflow: auto;
+
+}
+.list_user{
+    width: 100%;
+
+}
+.list_user .list_item{
+    border-bottom: 1px solid #ccc;
+    white-space: nowrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 10px;
+}
+.list_user .list_item.item_head{
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    padding: 5px 20px;
+    padding-left: 47px;
+}
+.list_user .list_item:last-child:not(.item_head){
+    border-bottom: 0px;
+}
+.list_user .list_item .list_col{
+    display: inline-block;
+}
+.list_user .list_item:first-child .list_col{
+
+}
+.list_user .list_item .list_col{
+
+}
+.list_user .list_item:first-child .list_col.name{
+
+
+}
+.list_user .list_item .list_col.name{
+    width: 35%;
+}
+.list_user .list_item .list_col.email{
+    width: 34%;
+}
+.list_user .list_item .list_col.phone{
+    width: 18%;
+}
+.list_user .list_item .list_col.action{
+    width: 13%;
+    text-align: right;
+}
+.list_user .list_item .list_col.name img{
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: -12px;
+    height: 32px;
+    width: 32px;
+}
+.list_user .list_item .list_col button.select{
+    border: 1px solid #096;
+    border-radius: 25px;
+    padding: 1px 10px 0px 25px;
+    color: #fff;
+    background: url(../images/white-plus.png) no-repeat 9px 8px;
+    background-color: #096;
+    cursor: pointer;
+    height: 28px;
+}
+
+.list_user .list_item .list_col button.select.selected{
+    background: url(../images/white-done.png) no-repeat 5px 6px;
+    background-color: #096;
+    padding: 1px 3px 0px 23px;
+}
+
+#invite_content .footer{
+    margin: 0px 20px;
+    border-top: 1px solid #ccc;
+    padding: 5px 0px;
+}
+#invite_content .footer .confirm{
+    display: block;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #3d4c6d;
+    background-color: #3d4c6d;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 7px 9px;
+}
+
+.iframe-content form .control-group .control-label{
+    width: 120px;
+
+    text-align: right;
+    padding-right: 15px;
+}
+.iframe-content form .control-group .controls{
+
+}
+.iframe-content .modal_content input{
+    width: 350px;
+    margin-bottom: 0px;
+}
+.visible-desktop{
+    display: none !important;
+}

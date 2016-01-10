@@ -1,0 +1,7 @@
+/nbproject/
+/application/logs/log-*
+/application/config/api_config.php
+/application/config/database.php
+/application/config/bigbluebutton.php
+/application/controllers/cronjob.php
+/uploads/*
