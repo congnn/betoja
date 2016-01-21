@@ -6,7 +6,6 @@
         <?php echo $header_page; ?>
     </head>
     <body data-barack="<?php echo $this->json_item_barack; ?>">
-      <?php include_once(APPPATH ."third_party/analyticstracking.php") ?>
         <div class="page-container">
             <header id="header" class="navbar navbar-inverse navbar-fixed-top">
                 <?php echo $menu_bar; ?>

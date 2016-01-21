@@ -6,7 +6,6 @@
         <?php echo $header_page; ?>
     </head>
     <body barack="<?php echo $this->json_item_barack; ?>">
-         <?php include_once(APPPATH ."third_party/analyticstracking.php") ?>
         <?php echo $content; ?>
     </body>
 </html>

@@ -9,7 +9,7 @@
 /**
  * Description of customer
  *
- * @author Tùng Arsenal
+ *
  */
 class College extends admin_manager_base {
 

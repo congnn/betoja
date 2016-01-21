@@ -59,3 +59,12 @@
 <script src="<?php echo $this->path_theme_file; ?>js/theme-init.js"></script>
 <script src="<?php echo $this->path_theme_file; ?>js/theme-base.js"></script>
 <script src="<?php echo $this->path_theme_file; ?>js/form.js"></script>
+
+
+
+<!-- Headings -->
+
+ <!--DUCANH CAP NHAT LEVEL CARE ALL-->
+<!--<script type="text/javascript" src="<?php // echo $this->path_theme_file; ?>js/sys_level_care/sys_level_care.js"></script>-->
+<!-- DUCANH MANUAL DONG BO ALL STUDENT VE LMS-->
+<!--<script type="text/javascript" src="<?php // echo $this->path_theme_file; ?>js/student/student.js"></script>-->

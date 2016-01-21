@@ -41,13 +41,13 @@
                                     </li> -->
                                     <li>
                                         <a href="<?php echo $changer_info_url  ?>" class="">
-                                            <i class="icon16 i-user-cus"></i>
-                                            Profile</a>
+                                            <i class="icon16 i-user"></i>
+                                            Trang cá nhân</a>
                                     </li>
                                     <li>
                                         <a href="<?php  echo $logout_url;  ?>" class="">
-                                            <i class="icon16 i-exit-cus"></i>
-                                            Logout</a>
+                                            <i class="icon16 i-exit"></i>
+                                            Đăng xuất</a>
                                     </li>
                                 </ul>
                             </li>
@@ -194,7 +194,7 @@
                             </li>-->
 
 
-            <!--<li class="divider-vertical"></li>-->z
+            <!--<li class="divider-vertical"></li>-->
             </ul>
         </div>
         <!--/.nav-collapse --> 

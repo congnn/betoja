@@ -20,17 +20,10 @@
                 </aside>
                 <?php
                     }
-                    else {
-                        ?>
-                 <aside id="sidebar" style="display: none">
-                    <?php  echo $left_content; ?>
-                </aside>
-                <?php
-                    }
                 ?>
                 <!-- End #sidebar -->
                 <section id="content">
-                    <div class="wrapper" style="margin-left: 13px;width: 98%;">
+                    <div class="wrapper">
                         <?php // echo $breadcrumb; ?>
                         <div class="container-fluid">
 <!--                            <div id="heading" class="page-header">

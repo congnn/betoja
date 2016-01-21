@@ -6,7 +6,6 @@ if (!defined('BASEPATH'))
 /*
  * Description of ms_base
  *
- * Author	: Pham Trong
  */
 
 class home_base extends MX_Controller {
@@ -32,7 +31,7 @@ class home_base extends MX_Controller {
      */
     var $json_item_barack = ";mtb;";
     var $md5_salt = '1@ANmC^%^wrFO'; /* md5($this->md5_salt . sha1($pass . $this->md5_salt)) */
-    var $domain_url = "http://cloudworks.vn/";
+    var $domain_url = "http://betoja.webstarterz.com/";
     var $link_upload = './uploads';
     var $folder_upload = 'uploads';
 
@@ -48,42 +47,8 @@ class home_base extends MX_Controller {
         $_SESSION['img_absolute_path'] = 'galery/'; /* không bắt đầu bằng dấu "/" */
         $_SESSION['img_domain'] = base_url('galery');
         $class = $this->router->fetch_class();
-        if ($this->require_login()) {
-            if (!$this->session->userdata('id')) {
-                redirect(site_url('login'));
-            }
-        }
-        if (!$this->check_permission()) {
-            if ($this->session->userdata("perData")) {
-                if ($this->input->is_ajax_request()) {
-                    $data_return = Array();
-                    $data_return["callback"] = "permission_error";
-                    $data_return["state"] = 0;
-                    $data_return["msg"] = "Bạn ko có quyền truy nhập";
-                    echo json_encode($data_return);
-                    exit;
-                } else {
-                    $list_per = explode(";", $this->session->userdata("perData"));
-                    $temp = explode(".", $list_per [0]);
-                    if ($temp[0] == "*") {
-                        $redirect = site_url();
-                    } else {
-                        if (isset($temp[1]) || $temp[1] == "*") {
-                            $redirect = site_url($temp[0]);
-                        } else {
-                            $redirect = site_url($temp[0] . "/" . $temp[1]);
-                        }
-                    }
-                    echo "<meta charset='utf-8'/>";
-                    echo "<h2>Bạn không có quyền truy cập chức năng này!</h2>";
-                    echo "Mục đích của bạn đến đây làm gì?<br />";
-                    echo "Click vào <a href='" . $redirect . "'>đây</a> để về lại thế giới của bạn.";
-                    exit;
-                }
-            } else {
-                redirect(site_url('login'));
-            }
-        }
+       
+        
     }
 
     function removeMobile() {
@@ -148,7 +113,7 @@ class home_base extends MX_Controller {
     }
 
     protected function require_login() {
-        return true;
+        return false;
     }
 
     protected function check_permission() {
